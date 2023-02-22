@@ -1,7 +1,7 @@
 ﻿@using CallOfDuty.Models
-@model Properties
+@model Root
 
-<h1 style="color:white">Player Stats</h1>
+<h1 style="color:white">@Model.data.username's Stats</h1>
 <link rel="stylesheet" href="~/css/Searchpage.css">
 <table class="table">
     <tr>
@@ -22,20 +22,21 @@
         <th style="color:white; width:25%;">Games Played</th>
     </tr>
     <tr>
-        <td style="color:white; width:25%;">@Model.wins</td>
-        <td style="color:white; width:25%;">@Model.kills</td>
-        <td style="color:white; width:25%;">@Model.deaths</td>
-        <td style="color:white; width:25%;">@Model.objTime</td>
-        <td style="color:white; width:25%;">@Model.contracts</td>
-        <td style="color:white; width:25%;">@Model.revives</td>
-        <td style="color:white; width:25%;">@Model.downs</td>
-        <td style="color:white; width:25%;">@Model.score</td>
-        <td style="color:white; width:25%;">@Model.topTwentyFive</td>
-        <td style="color:white; width:25%;">@Model.topTen</td>
-        <td style="color:white; width:25%;">@Model.topFive</td>
-        <td style="color:white; width:25%;">@Model.scorePerMinute</td>
-        <td style="color:white; width:25%;">@Model.timePlayed</td>
-        <td style="color:white; width:25%;">@Model.gamesPlayed</td>
+        <td style="color:white; width:25%;">@Model.data.lifetime.mode.br_all.properties.wins</td>
+        <td style="color:white; width:25%;">@Model.data.lifetime.mode.br_all.properties.kills</td>
+        <td style="color:white; width:25%;">@Model.data.lifetime.mode.br_all.properties.deaths</td>
+        <td style="color:white; width:25%;">@Model.data.lifetime.mode.br_all.properties.kdRatio</td>
+        <td style="color:white; width:25%;">@Model.data.lifetime.mode.br_all.properties.objTime</td>
+        <td style="color:white; width:25%;">@Model.data.lifetime.mode.br_all.properties.contracts</td>
+        <td style="color:white; width:25%;">@Model.data.lifetime.mode.br_all.properties.revives</td>
+        <td style="color:white; width:25%;">@Model.data.lifetime.mode.br_all.properties.downs</td>
+        <td style="color:white; width:25%;">@Model.data.lifetime.mode.br_all.properties.score</td>
+        <td style="color:white; width:25%;">@Model.data.lifetime.mode.br_all.properties.topTwentyFive</td>
+        <td style="color:white; width:25%;">@Model.data.lifetime.mode.br_all.properties.topTen</td>
+        <td style="color:white; width:25%;">@Model.data.lifetime.mode.br_all.properties.topFive</td>
+        <td style="color:white; width:25%;">@Model.data.lifetime.mode.br_all.properties.scorePerMinute</td>
+        <td style="color:white; width:25%;">@Model.data.lifetime.mode.br_all.properties.timePlayed</td>
+        <td style="color:white; width:25%;">@Model.data.lifetime.mode.br_all.properties.gamesPlayed</td>
 
     </tr>
 
