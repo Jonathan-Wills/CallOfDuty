@@ -27,7 +27,7 @@ namespace CallOfDuty.Controllers
 
         public IActionResult Search(Root rootPlayer)
         {
-            var client = new RestSharp.RestClient($"https://call-of-duty-modern-warfare.p.rapidapi.com/warzone/{rootPlayer.data.username}/psn");
+            var client = new RestSharp.RestClient($"https://call-of-duty-modern-warfare.p.rapidapi.com/warzone/{rootPlayer.data.username}/acti");
             var request = new RestRequest(Method.GET);
             request.AddHeader("X-RapidAPI-Key", "e26ce70479msh862bb9d83cedcf3p16d800jsnb50c1d29c253");
             request.AddHeader("X-RapidAPI-Host", "call-of-duty-modern-warfare.p.rapidapi.com");
